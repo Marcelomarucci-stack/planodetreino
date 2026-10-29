@@ -2,6 +2,7 @@
  * PLANO DE TREINO – edite aqui.
  *
  * - `exercises`: catálogo com nome, tipo de registro e observação técnica.
+ *   `video` muda o termo buscado no YouTube pelo botão "Ver vídeo".
  *   O histórico de cada exercício é ligado pelo id (ex.: 'goblet'), então
  *   mantenha o mesmo id se quiser que a evolução de carga continue.
  * - `phases`: treinos de segunda (1) a sábado (6) de cada fase. Um dia pode ser
@@ -57,6 +58,7 @@ export const exercises: Record<string, ExerciseInfo> = {
   },
   'terra-romeno-unilateral': {
     name: 'Terra romeno unilateral (halter leve)',
+    video: 'terra romeno unilateral com halter execução',
     kind: 'peso',
     note: 'Coluna neutra, quadril vai para trás. Amplitude curta; pare antes de perder a posição.',
   },
@@ -82,6 +84,7 @@ export const exercises: Record<string, ExerciseInfo> = {
   },
   'remada-peito-apoiado': {
     name: 'Remada no peito apoiado',
+    video: 'remada com apoio no peito banco inclinado execução',
     kind: 'peso',
     note: 'Peito colado no apoio; puxe com as costas, sem dar tranco.',
   },
@@ -97,6 +100,7 @@ export const exercises: Record<string, ExerciseInfo> = {
   },
   rosca: {
     name: 'Rosca',
+    video: 'rosca direta com halter execução',
     kind: 'peso',
     note: 'Em sequência com o tríceps na polia. Cotovelos parados, sem balançar o tronco.',
   },
@@ -112,6 +116,7 @@ export const exercises: Record<string, ExerciseInfo> = {
   },
   flexao: {
     name: 'Flexão',
+    video: 'flexão de braço execução correta',
     kind: 'corporal',
     note: 'Pare 2 repetições antes da falha. Corpo em prancha; pode apoiar no banco.',
   },

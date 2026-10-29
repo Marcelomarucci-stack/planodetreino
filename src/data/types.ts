@@ -12,6 +12,8 @@ export interface ExerciseInfo {
   kind: ExerciseKind
   /** Observação técnica exibida no treino. */
   note?: string
+  /** Busca do botão "Ver vídeo" no YouTube (padrão: nome + "execução"). */
+  video?: string
 }
 
 export interface ExerciseItem {

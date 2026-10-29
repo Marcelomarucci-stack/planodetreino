@@ -104,6 +104,12 @@ export function exerciseName(id: string) {
   return exercises[id]?.name ?? id
 }
 
+export function videoUrl(id: string) {
+  const info = exercises[id]
+  const query = info?.video ?? `${info?.name ?? id} execução`
+  return `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`
+}
+
 export function formatTarget(item: ExerciseItem) {
   const side = item.perSide ? `/${item.perSide}` : ''
   if (item.reps.startsWith('RIR')) return `${item.sets} séries · 2 reps antes da falha`
