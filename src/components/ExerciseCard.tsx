@@ -1,5 +1,5 @@
 import { exercises } from '../data/plan'
-import { formatDate, formatRest, formatTarget } from '../data/schedule'
+import { formatDate, formatRest, formatTarget, videoUrl } from '../data/schedule'
 import type { ExerciseItem } from '../data/types'
 import { lastSessionBefore, summarizeSets } from '../lib/history'
 import { href } from '../lib/router'
@@ -84,6 +84,9 @@ export function ExerciseCard({ item, log, date, update }: Props) {
 
       {item.optional && <p className="optional-tag">{item.optional}</p>}
       {(info.note || item.note) && <p className="note">{[item.note, info.note].filter(Boolean).join(' ')}</p>}
+      <a className="video-btn" href={videoUrl(item.id)} target="_blank" rel="noopener noreferrer">
+        ▶ Ver vídeo
+      </a>
 
       <p className="last-time">
         {last ? (
